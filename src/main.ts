@@ -65,7 +65,6 @@ async function run() {
   if (!process.env.BOT_TOKEN) {
     throw Error("Could not find BOT_TOKEN in your environment");
   }
-  console.log(process.env.BOT_TOKEN)
   // Log in with your bot token
   await bot.login(process.env.BOT_TOKEN);
 }
