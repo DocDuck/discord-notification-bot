@@ -1,7 +1,7 @@
-import { dirname, importx } from "@discordx/importer";
-import type { Interaction, Message } from "discord.js";
-import { IntentsBitField } from "discord.js";
-import { Client } from "discordx";
+import { dirname, importx } from '@discordx/importer';
+import type { Interaction, Message } from 'discord.js';
+import { IntentsBitField } from 'discord.js';
+import { Client } from 'discordx';
 import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 dotenv.config();
 
@@ -11,11 +11,11 @@ export const bot = new Client({
 
   // Discord intents
   intents: [
-    IntentsBitField.Flags.Guilds,
-    IntentsBitField.Flags.GuildMembers,
-    IntentsBitField.Flags.GuildMessages,
-    IntentsBitField.Flags.GuildMessageReactions,
-    IntentsBitField.Flags.GuildVoiceStates,
+    // IntentsBitField.Flags.Guilds,
+    // IntentsBitField.Flags.GuildMembers,
+    // IntentsBitField.Flags.GuildMessages,
+    // IntentsBitField.Flags.GuildMessageReactions,
+    // IntentsBitField.Flags.GuildVoiceStates,
   ],
 
   // Debug logs are disabled in silent mode
