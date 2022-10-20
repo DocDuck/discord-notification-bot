@@ -14,7 +14,7 @@ const notify = async () => {
     });
     console.log('Хук получен')
     schedule('* * * * *', async () => {
-      await webhook.send(`@BPM, Го на дейлик! https://us04web.zoom.us/j/3845163874?pwd=MXVYZXRBWHBpOFlVQUNldlNCaVlhQT09, [123456]`);
+      await webhook.send(`@&BPM, Го на дейлик! https://us04web.zoom.us/j/3845163874?pwd=MXVYZXRBWHBpOFlVQUNldlNCaVlhQT09, [123456]`);
     });
   } catch (error) {
     console.error('Error trying to send: ', error);
