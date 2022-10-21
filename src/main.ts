@@ -15,7 +15,7 @@ const notify = async () => {
     console.log('Хук получен')
     schedule('00 11 * * *', async () => {
       console.log('отправляю сообщение в 11:00')
-      await webhook.send(`<@&1032599320119226398>, Го на дейлик! https://us04web.zoom.us/j/3845163874?pwd=MXVYZXRBWHBpOFlVQUNldlNCaVlhQT09, [123456]`);
+      await webhook.send(`<@&837304632845008946>, Го на дейлик! https://us04web.zoom.us/j/3845163874?pwd=MXVYZXRBWHBpOFlVQUNldlNCaVlhQT09, [123456]`);
     });
   } catch (error) {
     console.error('Ошибка при отправке: ', error);
