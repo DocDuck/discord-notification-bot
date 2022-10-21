@@ -13,8 +13,7 @@ const notify = async () => {
       token: String(process.env.WEBHOOK_TOKEN)
     });
     console.log('Хук получен')
-    schedule('00 11 * * *', async () => {
-      console.log('отправляю сообщение в 11:00')
+    schedule('00 11 * * 1-5', async () => {
       await webhook.send(`<@&837304632845008946>, Го на дейлик! https://us04web.zoom.us/j/3845163874?pwd=MXVYZXRBWHBpOFlVQUNldlNCaVlhQT09, [123456]`);
     });
   } catch (error) {
