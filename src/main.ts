@@ -60,7 +60,9 @@ bot.once("ready", async () => {
   const voiceRoomID = '1030424287074582581'
   const voicePingID = '1055401857310269470'
   const channel = await bot.channels.cache.get(voicePingID)
-
+  console.log('channel voiceRoomID', channel, voiceRoomID)
+  console.log('channels', await bot.channels.cache.clone())
+  await (channel as TextChannel).send(`test from office pc <#${voiceRoomID}>`);
   channel && schedule('00 11 * * 1-5', async () => {
     await (channel as TextChannel).send(`@everyone Го на дейлик! <#${voiceRoomID}>`);
   });
